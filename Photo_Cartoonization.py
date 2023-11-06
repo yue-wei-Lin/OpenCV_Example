@@ -25,3 +25,7 @@ cv2.imwrite('cartoon.jpg', cartoon)
 # 顯示原始圖片和處理後的圖片（需要在窗口中顯示圖片時使用）
 cv2_imshow(image)
 cv2_imshow(cartoon)
+
+#在這個程式中，我們首先將圖片轉換為灰度圖像，然後使用 adaptiveThreshold 函數進行邊緣檢測。
+#接著，我們使用 bilateralFilter 函數對彩色圖像進行平滑處理，同時保留邊緣細節。
+#最後，我們將邊緣圖像和彩色圖像進行按位與運算，得到卡通風格的圖像。
